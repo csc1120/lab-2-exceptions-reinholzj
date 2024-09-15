@@ -11,22 +11,26 @@ import java.io.IOException;
 import java.util.Random;
 
 public class Die {
+    public static final int MIN_SIDES = 2;
+    public static final int MAX_SIDES = 100;
     Random rand = new Random();
-    private int numsides;
+    private int numSides;
     private int currentValue;
 
-    public void Die(int numsides){
-        if(numsides < 2 || numsides > 100){
+    public void Die(int numSides){
+        if(numSides < MIN_SIDES || numSides > MAX_SIDES){
             throw new IllegalArgumentException("Number of sides between 2 and 100");
         }
-        this.numsides = numsides;
+        this.numSides = numSides;
+        this.currentValue = 0;
+
     }
     public void roll(){
-        this.currentValue = (int) (Math.random() * numsides) + 1;
+        this.currentValue = (int) (Math.random() * numSides) + 1;
     }
     public int getCurrentValue(){
-        if(currentValue < 1 || currentValue > numsides){
-            throw new IllegalStateException("Current value is not in the expected range of the die");
+        if(currentValue == 0){
+            throw new DieNotRolledException("Die has not been rolled");
         }
         int valuetoReturn = currentValue;
         currentValue =0;

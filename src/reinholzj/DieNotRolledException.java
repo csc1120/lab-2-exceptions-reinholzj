@@ -7,8 +7,12 @@
  */
 package reinholzj;
 
-public class DieNotRolledException extends Exception{
-    public void getMessage(){
-        System.out.println("Die is not rolled properly");
+public class DieNotRolledException extends RuntimeException{
+    public DieNotRolledException(String message){
+        super(message);
+    }
+    @Override
+    public String getMessage(){
+        return super.getMessage();
     }
 }

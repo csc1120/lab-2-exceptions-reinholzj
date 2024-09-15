@@ -8,5 +8,7 @@
 package reinholzj;
 
 public class Driver {
+public void message(){
 
+}
 }
