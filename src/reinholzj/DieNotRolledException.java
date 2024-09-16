@@ -3,11 +3,18 @@
  * Lab 2 - Exceptions
  * DieNotRolledException class
  * Name: Josiah Reinholz
- * Last Updated: 9/11/2024
+ * Last Updated: 9/15/2024
  */
 package reinholzj;
 
-public class DieNotRolledException extends RuntimeException{
+/**
+ * Creates a custom exception for the dice not having yet been rolled
+ */
+public class DieNotRolledException extends RuntimeException {
+    /**
+     * The method call for the DieNotRolledException
+     * @param message creates the error message for DieNotRolledException
+     */
     public DieNotRolledException(String message){
         super(message);
     }
