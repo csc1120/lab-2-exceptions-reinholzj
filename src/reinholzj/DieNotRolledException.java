@@ -12,7 +12,7 @@ package reinholzj;
  */
 public class DieNotRolledException extends RuntimeException {
     /**
-     * The method call for the DieNotRolledException
+     * The method call for DieNotRolledException
      * @param message creates the error message for DieNotRolledException
      */
     public DieNotRolledException(String message){

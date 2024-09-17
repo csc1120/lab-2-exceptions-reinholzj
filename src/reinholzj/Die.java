@@ -24,7 +24,7 @@ public class Die {
      * @param numSides
      * @throws IllegalArgumentException the value of numSides must be between 2 and 100
      */
-    public void die(int numSides){
+    public Die(int numSides){
         if(numSides < MIN_SIDES || numSides > MAX_SIDES){
             throw new IllegalArgumentException("Number of sides between 2 and 100");
         }
