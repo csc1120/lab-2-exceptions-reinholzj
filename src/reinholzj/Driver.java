@@ -29,7 +29,6 @@ public class Driver {
                 int[] rolls = rollDice(dice, numSides, numRolls);
                 int max = findMax(rolls);
                 report(max, rolls, numDice);
-                break;
             } catch(IllegalArgumentException e) {
                 System.out.println("Unable to create dice: Illegal Argument");
             } catch(InputMismatchException e){
