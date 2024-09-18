@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lab-2-exceptions-reinholzj:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/lab_2_exceptions_reinholzj_jar2</output-path>
+    <root id="archive" name="lab-2-exceptions-reinholzj.jar">
+      <element id="module-output" name="lab-2-exceptions-reinholzj" />
+    </root>
+  </artifact>
+</component>
